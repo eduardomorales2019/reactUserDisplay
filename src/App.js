@@ -28,8 +28,13 @@ function App() {
 
     if (e.target.classList.contains("icon")) {
       // console.log("Soy el boton"); // not so exact
-      const newVaalue = e.target.dataset.info;
-      console.log(newVaalue);
+      const newValue = e.target.dataset.info;
+
+      console.log(newValue);
+      // we have to set the property value dinamicly ..
+      // CHECK THE NUGGET VIDEO, FOR MORE UNDERTAING. BUT ITS PRETTY CLEAR.
+      setTitle(newValue); // here my new values is equal to my string amd pointing.
+      setValue(people[newValue]);
     }
   };
 
